@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+            <!-- informations et liens-->
+            <meta charset="utf-8">            
+            <title style="color:red;">Reservation bercy</title>
+            <!-- liens vers de feuilles de styles CSS ou des scripts JS-->
+            <link href="style.css" rel="stylesheet">
+            <script type="text/javascript" src="script.js"><</script>
+            
+  </head>
+  
+  <body>
+  <main id="main-holder">
+    <form method="GET" action="page3.html">
+    <h2>Reservation Bercy pour 1er avril 2023</h2>
+    <fieldset>
+      <legend>Choix Artiste</legend>
+      <label for="artiste">Choisir un artiste a voir a Bercy  </label>
+      <div>
+    <input type="radio" id="artiste" name="artiste" value="Damso">
+    <label for="artiste">Damso</label>
+    </div>
+    <div>
+    <input type="radio" id="artiste" name="artiste" value="AlphaWann">
+    <label for="artiste">AlphaWann</label>
+    </div>
+    </fieldset>
+    <fieldset>
+      <legend>Renseignez les informations necessaires</legend>
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" required minlength="4" maxlength="250" size="33"> <br>
+        <label for="prenom">Prénom</label>
+        <input type="text" id="pn" name="pn" required minlength="4" maxlength="250" size="31"><br>
+        <label for="Date de naissance">Date_de_naissance</label>
+        <input type="text" id="dn" name="dn" required minlength="4" maxlength="10" size="20"> <br>
+        
+        <label for="Nombre_de_places">Nombre_de_places</label>
+        <input type="text" id="np" name="np" required minlength="1" maxlength="10" size="20"> <br>
+        <legend>Type de place</legend>
+    <label for="place"></label>
+    <select id="place" name="place">
+    <option value="Normal (50 euros)">Normal (50 euros)</option>
+    <option value="Premium (200 euros)">Premium (200 euros)</option>
+    <option value="Vip (1000 euros (une brique))">VIP (1000 euros (une brique))</option>
+   
+  </select>
+   </fieldset>
+    <!-- bouton d'envoi des données saisies-->
+    <button type="submit">Envoyer les données</button>      
+    </form>    
+    </main>
+    </body>
+  </html> 
