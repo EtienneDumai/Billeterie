@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="login-page.js"></script>
+</head>
+
+<body>
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    
+   
+    
+    <form id="login-form">
+      <input type="text" name="username" id="username" class="login-form-field" placeholder="Nom d'utilisateur">
+      <input type="password" name="password" id="password" class="login-form-field" placeholder="Mot de passe">
+      <button type="button" onclick="verifyPassword()">Login</button>
+    </form>
+  
+  </main>
+  <script>
+  function verifyPassword() {  
+        var pw = document.getElementById("password").value;  
+        var user = document.getElementById("username").value;
+        if(pw=="Malraux21" && user=="Bercy"){
+          window.location.href="page2.html";
+        }
+        else
+        {
+        	alert("Mot de passe ou identifiant incorrect");
+        }
+                          }
+</script>
+</body>
+</html>
